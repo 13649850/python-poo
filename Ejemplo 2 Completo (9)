@@ -1,0 +1,31 @@
+#Ejercicio 2 utlizando todo lo visto anteriormente 
+
+class Persona: 
+    def __init__(self, nombre, edad, domicilio, pasatiempo):
+        self.nombre = nombre
+        self.edad = edad
+        self.domicilio = domicilio
+        self.pasatiempo = pasatiempo
+
+    def mostrar_datos(self):
+        print(f"Nombre: {self.nombre}")
+        print(f"Edad: {self.edad}")
+        print(f"Domicilio: {self.domicilio}")
+        print(f"Pasatiempo: {self.pasatiempo}")
+
+class Estudiante(Persona): 
+    def __init__(self, nombre, edad, domicilio, pasatiempo, grado, universidad):
+        super().__init__(nombre, edad, domicilio, pasatiempo)
+        self.grado = grado
+        self.universidad = universidad
+
+    def mostrar_grado(self):
+        print(f"Grado: {self.grado}")
+
+    def mostrar_universidad(self):
+        print(f"Universidad: {self.universidad}")
+
+estudiante = Estudiante("Francis", 19, "El condado", "Estudiar coreano", "2 semestre", "ESPE")
+estudiante.mostrar_datos()
+estudiante.mostrar_grado()
+estudiante.mostrar_universidad()

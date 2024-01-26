@@ -1,0 +1,37 @@
+#Ejercicio 1 utlizando todo lo visto anteriormente 
+
+class Estudiante:
+    def __init__(self, nombre, edad, grado, universidad, domicilio):
+        self.nombre = nombre
+        self.edad = edad
+        self.grado = grado 
+        self.universidad = universidad
+        self.domicilio = domicilio
+
+    def estudiar(self):
+        print("Estudiando...")
+        
+nombre = input("Digame su nombre: ")
+edad = input("Su edad: ")
+grado = input("Su grado: ")
+universidad = input("La universidad donde estudia: ")
+domicilio = input("Por ultimo su domicilio: ")
+
+estudiante = Estudiante(nombre,edad,grado,universidad,domicilio)
+
+print(f"""
+       DATOS DEL ESTUDIANTE: \n
+        Nombre: {estudiante.nombre} 
+        Edad: {estudiante.edad} 
+        Grado: {estudiante.grado} 
+        Universidad: {estudiante.universidad} 
+        Domicilio: {estudiante.domicilio} 
+
+""")  
+
+while True:
+    estudiar = input()
+    if (estudiar.lower() == "estudiar"):
+        estudiante.estudiar()
+
+

@@ -1,0 +1,9 @@
+#ejemplo de encapsulamiento
+#ejemplo de atributo muy privado
+
+class MiClase:
+    def __init__(self):
+        self.__atributo_privado = "Valor"
+
+objeto = MiClase()
+print(objeto.__atributo_privado)

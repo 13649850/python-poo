@@ -1,0 +1,26 @@
+#Ejercicio 2.1 utlizando todo lo visto anteriormente 
+
+class Animal:
+    def comer(self):
+        print("El animal está comiendo")
+    
+    def dormir(self):
+        print("El animal está durmiendo")
+
+class Mamifero(Animal):
+    def amamantar(self):
+        print("El animal está amamantando")
+
+class Oviparo(Animal):
+    def nacer(self):
+        print("El animal es oviparo ya que nace de un huevo")
+
+class Ornitonrinco(Mamifero,Oviparo):
+    pass
+
+Ornitonrinco = Ornitonrinco() 
+
+Ornitonrinco.comer() 
+Ornitonrinco.dormir()
+Ornitonrinco.amamantar()
+Ornitonrinco.nacer()

@@ -1,0 +1,21 @@
+#ejemplo de como utilizar polimorfismo por herencia
+
+class Animal():
+    def sonido(self):
+        pass
+        
+class Gato(Animal):
+    def sonido(self):
+        return "Miau"
+    
+class Perro(Animal):
+    def sonido(self):
+        return "Guau"   
+     
+    def hacer_sonido(Animal):
+        print(Animal.sonido())
+
+gato = Gato()
+perro = Perro()
+
+print(perro.sonido())
